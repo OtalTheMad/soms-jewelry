@@ -13,10 +13,21 @@
         justify-content: left;
     }
 }
+/* Header design */
 header
 {
     background-color: #5E503F;
-    display: flex;
+}
+.gridContainer-header
+{
+    display: grid;
+    grid-template-columns: 110px auto;
+    align-items: center;
+    justify-content: left;
+}
+#siteTitle-header
+{
+    color: white;
 }
 #logo
 {
@@ -25,6 +36,9 @@ header
     margin: 0;
     padding: 0;
 }
+
+/* End of Header design */
+
 .link
 {
     display: inline-block;

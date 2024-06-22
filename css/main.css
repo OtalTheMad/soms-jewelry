@@ -1,111 +1,38 @@
-/* Responsive Layout */
-@media screen and (max-width: 992px)
+/* Header design */
+
+#siteTitle
 {
-    .gridTableMain
-    {
-        display: grid;
-        grid-template:
-        'purse purse2'
-        'collar collar2'
-        'earring earring2';
-        /* grid-template-columns: auto; */
-    }
-        .flexContainer
-        {
-            display: flex;
-            flex-flow: column wrap;
-            align-content: center;
-        }
-            .gridItem1-purse
-            {
-                grid-area: purse;
-            }
-            .gridItem2-purse
-            {
-                grid-area: purse2;
-            }
-            .gridItem1-collar
-            {
-                grid-area: collar;
-            }
-            .gridItem2-collar
-            {
-                grid-area: collar2;
-            }
-            .gridItem1-earring
-            {
-                grid-area: earring;
-            }
-            .gridItem2-earring
-            {
-                grid-area: earring2;
-            }
+    font-size: 50px;
 }
-@media screen and (max-width: 800px)
-{
-    .gridTableMain
-    {
-        display: grid;
-        /* grid-template:
-        'purse purse purse'
-        'purse2'
-        'collar'
-        'collar2'
-        'earring'
-        'earring2'; */
-        grid-template-columns: 33.3% 33.3%;
-    }
-        .flexContainer
-        {
-            display: flex;
-            flex-flow: column wrap;
-        }
-            .gridItem1-purse
-            {
-                grid-area: purse;
-                grid-column: 1 / span 2;
-            }
-            .gridItem2-purse
-            {
-                grid-column: 2 / span 2;
-            }
-            .gridItem1-collar
-            {
-                grid-area: collar;
-            }
-            .gridItem2-collar
-            {
-                grid-area: collar2;
-                border: 1px solid gold;
-            }
-            .gridItem1-earring
-            {
-                grid-area: earring;
-            }
-            .gridItem2-earring
-            {
-                grid-area: earring2;
-            }
-            .gridItemPicture
-            {
-                border: 5px solid white;
-            }
-                .imgContent
-                {
-                    display: block;
-                    margin-left: auto;
-                    margin-right: auto;
-                    width: 100%;
-                }
-}
+
+/* Base design */
+
 .gridTableMain
 {
     display: grid;
-    grid-template-columns: 33.3% 33.3% 33.4%;
+    grid-template-areas:
+    'sideMenu gridItem1-purse gridItem1-collar gridItem1-earrings'
+    'sideMenu gridItem2-purse gridItem2-collar gridItem2-earrings'
+    'sideMenu gridItem3-purse gridItem3-collar gridItem3-earrings'
+    'sideMenu . gridItem4-collar .'
+    'sideMenu . gridItem5-collar .';
     background-color: #5E503F;
+    gap: 20px;
     padding: 10px;
 }
-/* Base design */
+    /* Side menu design */
+    .flexContainer-sideMenu
+    {
+        background-color: #F4E9CD;
+        grid-area: sideMenu;
+        border: 1px solid black;
+    }
+        .flexContent-sideMenu
+        {
+            color: black;
+            padding: 10px;
+        }
+    /* End of side menu design. */
     .flexContainer
     {
         display: flex;
@@ -128,6 +55,38 @@
                 background-color: #FFFFFF;
                 color: black;
             }
+            .gridItem1-purse
+            {
+                grid-area: gridItem1-purse;
+            }
+            .gridItem1-collar
+            {
+                grid-area: gridItem1-collar;
+            }
+            .gridItem2-collar
+            {
+                grid-area: gridItem2-collar;
+            }
+            .gridItem3-collar
+            {
+                grid-area: gridItem3-collar;
+            }
+            .gridItem4-collar
+            {
+                grid-area: gridItem4-collar;
+            }
+            .gridItem5-collar
+            {
+                grid-area: gridItem5-collar;
+            }
+            .gridItem1-earring
+            {
+                grid-area: gridItem1-earrings;
+            }
+            .gridItem2-earring
+            {
+                grid-area: gridItem2-earrings;
+            }
             .gridItemPicture
             {
                 border: 5px solid white;
@@ -139,3 +98,71 @@
                     margin-right: auto;
                     width: 50%;
                 }
+/* Responsive Layout */
+@media screen and (max-width: 992px)
+{
+    /* Header design */
+    #siteTitle
+    {
+        font-size: 20px;
+    }
+    .gridTableMain
+    {
+        grid-template-areas:
+        'sideMenu sideMenu sideMenu'
+        'purse purse purse'
+        'collar collar collar'
+        'collar2 collar2 collar2'
+        'collar3 collar3 collar3'
+        'collar4 collar4 collar4'
+        'collar5 collar5 collar5'
+        'earring earring earring'
+        'earring2 earring2 earring2';
+    }
+        .flexContainer
+        {
+            align-content: center;
+        }
+        .flexContainer-sideMenu
+        {
+            border: 1px solid black;
+        }
+            .flexContent-sideMenu
+            {
+                font-size: 10px;
+                margin: 0;
+                padding: 0;
+            }
+            .gridItem1-purse
+            {
+                grid-area: purse;
+            }
+            .gridItem1-collar
+            {
+                grid-area: collar;
+            }
+            .gridItem2-collar
+            {
+                grid-area: collar2;
+            }
+            .gridItem3-collar
+            {
+                grid-area: collar3;
+            }
+            .gridItem4-collar
+            {
+                grid-area: collar4;
+            }
+            .gridItem5-collar
+            {
+                grid-area: collar5;
+            }
+            .gridItem1-earring
+            {
+                grid-area: earring;
+            }
+            .gridItem2-earring
+            {
+                grid-area: earring2;
+            }
+}

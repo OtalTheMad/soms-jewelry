@@ -8,12 +8,21 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>SOMS - Joyería</title>
 </head>
 <body>
+    <!-- Website developed by Oscar Marcía, web developer. All rights reserved. -->
 
     <header>
-        <a href="index.html" class="link"><img src="/resources/images/logos/logo_sohms.jpeg" id="logo" alt="logo_sohms"></a>
+        <div class="gridContainer-header">
+            <div class="logoContainer">
+                <a href="index.html" class="link"><img src="/resources/images/logos/logo_sohms.jpeg" id="logo" alt="logo_sohms"></a>
+            </div>
+            <div id="siteTitle-header">
+                <h2 id="siteTitle">Catálogo SOMS Jewelry</h2>
+            </div>
+        </div>
     </header>
 
     <br>
@@ -21,7 +30,17 @@
     <!-- Table Grid: Contains the entire layout for the setup of the items. -->
     <div class="gridTableMain">
         <!-- Flex Container: Acts as a column. This is the first one, also makes images fit without expanding widely plus, helps control the divs in general. -->
-        <div class="flexContainer gridItem-purse">
+        <div class="flexContainer-sideMenu sideMenu">
+            <div class="gridItem">
+                <div class="flexContent-sideMenu">
+                    <h2>Contáctanos!</h2>
+                    <i class="fa fa-whatsapp" style="font-size:36px"></i><h2>+504 9401-1250</h2>
+                    <br>
+                    <i class="fa fa-whatsapp" style="font-size:36px"></i><h2>+504 9331-7099</h2>
+                </div>
+            </div>
+        </div>
+        <div class="flexContainer gridItem1-purse">
             <div class="gridItem">
                 <div class="flexContent">
                     <h2>Pulseras</h2>
@@ -29,13 +48,13 @@
                         <img class="imgContent" src="/resources/images/content/pulsera1.jpeg" alt="">
                     </div>
                     <div class="flexItemPrecio">
-                        <h3>L.500</h3>
+                        <h3>L.250</h3>
                     </div>
                 </div>
             </div>
         </div>
         <!-- Second Flex Container: Same as before, controls image sizes and text. -->
-        <div class="flexContainer gridItem-collar">
+        <div class="flexContainer gridItem1-collar">
             <!--Second Grid Item column-->
             <div class="gridItem">
                 <div class="flexContent">
@@ -44,13 +63,13 @@
                         <img class="imgContent" src="/resources/images/content/collar1.jpeg" alt="">
                     </div>
                     <div class="flexItemPrecio">
-                        <h3>L.500</h3>
+                        <h3>L.180</h3>
                     </div>
                 </div>
             </div>
         </div>
         <!-- Third Flex Container: Same as before, controls image sizes and text. -->
-        <div class="flexContainer gridItem-earring">
+        <div class="flexContainer gridItem1-earring">
             <!--Third Grid Item column-->
             <div class="gridItem">
                 <div class="flexContent">
@@ -59,47 +78,69 @@
                         <img class="imgContent" src="/resources/images/content/aritos1.jpeg" alt="">
                     </div>
                     <div class="flexItemPrecio">
-                        <h3>L.500</h3>
+                        <h3>L.180</h3>
                     </div>
                 </div>
             </div>
         </div>
         <!-- 2nd row, first column flex container: Same as before, controls image sizes and text. -->
-        <div class="flexContainer gridItem-purse">
-            <div class="gridItem">
+        <div class="flexContainer gridItem3-collar">
                 <div class="gridItem">
                     <div class="flexContent">
                         <div class="gridItemPicture">
-                            <img class="imgContent" src="/resources/images/content/pulsera2.jpeg" alt="">
+                            <img class="imgContent" src="/resources/images/content/collar4.jpeg" alt="">
                         </div>
                         <div class="flexItemPrecio">
-                            <h3>L.500</h3>
+                            <h3>L.200</h3>
                         </div>
                     </div>
                 </div>
-            </div>
         </div>
         <!-- 2nd row, second column flex container: Same as before, controls image sizes and text. -->
-        <div class="flexContainer gridItem-collar">
+        <div class="flexContainer gridItem2-collar">
             <div class="gridItem">
                 <div class="flexContent">
                     <div class="gridItemPicture">
                         <img class="imgContent" src="/resources/images/content/collar2.jpeg" alt="">
                     </div>
                     <div class="flexItemPrecio">
-                        <h3>L.500</h3>
+                        <h3>L.200</h3>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="flexContainer gridItem-earring">
+        <div class="flexContainer gridItem2-earring">
             <div class="gridItem">
                 <div class="flexContent">
                     <div class="gridItemPicture">
                         <img class="imgContent" src="/resources/images/content/aritos2.jpeg" alt="">
                     </div>
                     <div class="flexItemPrecio">
-                        <h3>L.500</h3>
+                        <h3>L.300</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="flexContainer gridItem4-collar">
+            <div class="gridItem">
+                <div class="flexContent">
+                    <div class="gridItemPicture">
+                        <img class="imgContent" src="/resources/images/content/collar3.jpeg" alt="">
+                    </div>
+                    <div class="flexItemPrecio">
+                        <h3>L.300</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="flexContainer gridItem5-collar">
+            <div class="gridItem">
+                <div class="flexContent">
+                    <div class="gridItemPicture">
+                        <img class="imgContent" src="/resources/images/content/collar5.jpeg" alt="">
+                    </div>
+                    <div class="flexItemPrecio">
+                        <h3>L.300</h3>
                     </div>
                 </div>
             </div>
