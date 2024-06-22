@@ -1,3 +1,48 @@
+/* Responsive Layout */
+@media (max-width: 800px)
+{
+    .gridTableMain
+    {
+        display: grid;
+        grid-template:
+        'purse'
+        'purse2'
+        'collar'
+        'collar2'
+        'earring'
+        'earring2';
+        /* grid-template-columns: auto; */
+    }
+        .flexContainer
+        {
+            display: flex;
+            flex-flow: column wrap;
+        }
+            .gridItem1-purse
+            {
+                grid-area: purse;
+            }
+            .gridItem2-purse
+            {
+                grid-area: purse2;
+            }
+            .gridItem1-collar
+            {
+                grid-area: collar;
+            }
+            .gridItem2-collar
+            {
+                grid-area: collar2;
+            }
+            .gridItem1-earring
+            {
+                grid-area: earring;
+            }
+            .gridItem2-earring
+            {
+                grid-area: earring2;
+            }
+}
 .gridTableMain
 {
     display: grid;
@@ -5,11 +50,11 @@
     background-color: #5E503F;
     padding: 10px;
 }
+/* Base design */
     .flexContainer
     {
         display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
+        flex-flow: row wrap;
     }
         .gridItem
         {
@@ -20,7 +65,6 @@
             {
                 background-color: #5E503F;
                 border-radius: 10;
-                flex: 1;
                 color: white;
                 margin: 5px;
             }

@@ -3,6 +3,16 @@
     box-sizing: border-box;
     margin: 0;
 }
+/* Responsive Design */
+@media (max-width: 800px)
+{
+    header
+    {
+        display: flex;
+        align-items: left;
+        justify-content: left;
+    }
+}
 header
 {
     background-color: #5E503F;
@@ -28,10 +38,11 @@ footer
     color: black;
     background-color: #F4E9CD;
     display: flex;
-    text-align: center;
+    text-align: left;
 }
 .footer
 {
+    font-size: small;
     flex: 1;
     padding: 20px;
 }
