@@ -1,41 +1,42 @@
-.flexContainer
-{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-}
-.flexContainer > .flexContent
-{
-    background-color: #5E503F;
-    border-radius: 10;
-    flex: 1;
-    color: white;
-    padding: 15px;
-    border: 1px solid #000000;
-    margin: 5px;
-}
-.flexContainer > .gridTableMain
+.gridTableMain
 {
     display: grid;
     grid-template-columns: auto auto auto;
-    border: 1px solid white;
     background-color: #5E503F;
     padding: 10px;
-    flex-grow: 2;
 }
-.gridItem
-{
-    text-align: center;
-    color: white;
-}
-.gridItemPicture
-{
-    width: 100%;
-}
-.imgContent
-{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
-}
+    .flexContainer
+    {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+        .gridItem
+        {
+            text-align: center;
+            color: white;
+        }
+            .flexContent
+            {
+                background-color: #5E503F;
+                border-radius: 10;
+                flex: 1;
+                color: white;
+                margin: 5px;
+            }
+            .flexItemPrecio
+            {
+                background-color: #FFFFFF;
+                color: black;
+            }
+            .gridItemPicture
+            {
+                border: 5px solid white;
+            }
+                .imgContent
+                {
+                    display: block;
+                    margin-left: auto;
+                    margin-right: auto;
+                    width: 50%;
+                }
