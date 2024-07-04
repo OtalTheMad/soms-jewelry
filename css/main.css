@@ -16,14 +16,14 @@
     'sideMenu gridItem3-purse gridItem3-collar gridItem3-earrings'
     'sideMenu . gridItem4-collar .'
     'sideMenu . gridItem5-collar .';
-    background-color: #5E503F;
+    background-color: #FFFFFF;
     gap: 20px;
     padding: 10px;
 }
     /* Side menu design */
     .flexContainer-sideMenu
     {
-        background-color: #F4E9CD;
+        background-color: #FFFFFF;
         grid-area: sideMenu;
         border: 1px solid black;
     }
@@ -41,13 +41,13 @@
         .gridItem
         {
             text-align: center;
-            color: white;
+            color: black;
         }
             .flexContent
             {
-                background-color: #5E503F;
+                background-color: #FFFFFF;
                 border-radius: 10;
-                color: white;
+                color: black;
                 margin: 5px;
             }
             .flexItemPrecio
@@ -89,7 +89,7 @@
             }
             .gridItemPicture
             {
-                border: 5px solid white;
+                border: 5px solid red;
             }
                 .imgContent
                 {

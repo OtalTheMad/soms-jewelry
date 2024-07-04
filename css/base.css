@@ -16,7 +16,7 @@
 /* Header design */
 header
 {
-    background-color: #5E503F;
+    background-color: #FFFFFF;
 }
 .gridContainer-header
 {
@@ -27,7 +27,7 @@ header
 }
 #siteTitle-header
 {
-    color: white;
+    color: black;
 }
 #logo
 {
@@ -45,7 +45,7 @@ header
 }
 body
 {
-    background-color: #F4E9CD;
+    background-color: #f9f6ec;
 }
 footer
 {
