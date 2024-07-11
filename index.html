@@ -14,142 +14,35 @@
 <body>
     <!-- Website developed by Oscar Marcía, web developer. All rights reserved. -->
 
-    <header>
-        <div class="gridContainer-header">
-            <div class="logoContainer">
-                <a href="index.html" class="link"><img src="/resources/images/logos/logo_sohms.jpeg" id="logo" alt="logo_sohms"></a>
+    <div class="row">
+        <header>
+            <div class="col-3 logo-container">
+                <img id="logo" src="resources/images/logos/logo_soms.png" alt="logo_soms">
             </div>
-            <div id="siteTitle-header">
-                <h2 id="siteTitle">Catálogo SOMS Jewelry</h2>
+            <div class="col-9 logo-header">
+                <h2>SOMS Jewelry</h2>
             </div>
-        </div>
-    </header>
+        </header>
+    </div>
+    <!-- Content Row -->
+    <div class="row">
+        <nav class="col-3 menu">
+            <li><a href="">Sample Text</a></li>
+            <li><a href="">Sample Text</a></li>
+            <li><a href="">Sample Text</a></li>
+        </nav>
 
-    <br>
-
-    <!-- Table Grid: Contains the entire layout for the setup of the items. -->
-    <div class="gridTableMain">
-        <!-- Flex Container: Acts as a column. This is the first one, also makes images fit without expanding widely plus, helps control the divs in general. -->
-        <div class="flexContainer-sideMenu sideMenu">
-            <div class="gridItem">
-                <div class="flexContent-sideMenu">
-                    <h2>Contáctanos!</h2>
-                    <i class="fa fa-whatsapp" style="font-size:36px"></i><h2>+504 9401-1250</h2>
-                    <br>
-                    <i class="fa fa-whatsapp" style="font-size:36px"></i><h2>+504 9331-7099</h2>
-                </div>
-            </div>
-        </div>
-        <div class="flexContainer gridItem1-purse">
-            <div class="gridItem">
-                <div class="flexContent">
-                    <h2>Pulseras</h2>
-                    <div class="gridItemPicture">
-                        <img class="imgContent" src="/resources/images/content/pulsera1.jpeg" alt="">
-                    </div>
-                    <div class="flexItemPrecio">
-                        <h3>L.250</h3>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Second Flex Container: Same as before, controls image sizes and text. -->
-        <div class="flexContainer gridItem1-collar">
-            <!--Second Grid Item column-->
-            <div class="gridItem">
-                <div class="flexContent">
-                    <h2>Collares</h2>
-                    <div class="gridItemPicture">
-                        <img class="imgContent" src="/resources/images/content/collar1.jpeg" alt="">
-                    </div>
-                    <div class="flexItemPrecio">
-                        <h3>L.180</h3>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Third Flex Container: Same as before, controls image sizes and text. -->
-        <div class="flexContainer gridItem1-earring">
-            <!--Third Grid Item column-->
-            <div class="gridItem">
-                <div class="flexContent">
-                    <h2>Aritos</h2>
-                    <div class="gridItemPicture">
-                        <img class="imgContent" src="/resources/images/content/aritos1.jpeg" alt="">
-                    </div>
-                    <div class="flexItemPrecio">
-                        <h3>L.180</h3>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- 2nd row, first column flex container: Same as before, controls image sizes and text. -->
-        <div class="flexContainer gridItem3-collar">
-                <div class="gridItem">
-                    <div class="flexContent">
-                        <div class="gridItemPicture">
-                            <img class="imgContent" src="/resources/images/content/collar4.jpeg" alt="">
-                        </div>
-                        <div class="flexItemPrecio">
-                            <h3>L.200</h3>
-                        </div>
-                    </div>
-                </div>
-        </div>
-        <!-- 2nd row, second column flex container: Same as before, controls image sizes and text. -->
-        <div class="flexContainer gridItem2-collar">
-            <div class="gridItem">
-                <div class="flexContent">
-                    <div class="gridItemPicture">
-                        <img class="imgContent" src="/resources/images/content/collar2.jpeg" alt="">
-                    </div>
-                    <div class="flexItemPrecio">
-                        <h3>L.200</h3>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="flexContainer gridItem2-earring">
-            <div class="gridItem">
-                <div class="flexContent">
-                    <div class="gridItemPicture">
-                        <img class="imgContent" src="/resources/images/content/aritos2.jpeg" alt="">
-                    </div>
-                    <div class="flexItemPrecio">
-                        <h3>L.300</h3>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="flexContainer gridItem4-collar">
-            <div class="gridItem">
-                <div class="flexContent">
-                    <div class="gridItemPicture">
-                        <img class="imgContent" src="/resources/images/content/collar3.jpeg" alt="">
-                    </div>
-                    <div class="flexItemPrecio">
-                        <h3>L.300</h3>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="flexContainer gridItem5-collar">
-            <div class="gridItem">
-                <div class="flexContent">
-                    <div class="gridItemPicture">
-                        <img class="imgContent" src="/resources/images/content/collar5.jpeg" alt="">
-                    </div>
-                    <div class="flexItemPrecio">
-                        <h3>L.300</h3>
-                    </div>
-                </div>
-            </div>
+        <div class="col-9 main">
+            <h1>Lorem, ipsum.</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi quos sit consequatur nesciunt veniam magni, autem fugiat quod, perferendis soluta ut cumque eos iste voluptatum placeat provident! Consequuntur, nostrum repellat?</p>
         </div>
     </div>
 
-    <footer>
-        <h2 class="footer">SOMS Jewelry - Honduras, © 2024</h2>
-    </footer>
+    <div class="col-12 row">
+        <footer class="col-12">
+            <h2 class="footer">SOMS Jewelry - Honduras, © 2024</h2>
+        </footer>
+    </div>
 
     
 </body>
