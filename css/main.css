@@ -1,13 +1,85 @@
 .logo-container
 {
     max-width: 100%;
+    text-align: center;
 }
 .logo-container > #logo
 {
-    display: block;
+    display: inline-block;
     border: 1px solid purple;
     height: auto;
     width: 100%;
     max-width: 200px; /* Optional: maximum width of the image */
     min-width: 100px; /* Optional: minimum width of the image */
+}
+
+.logo-header {
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+/* Slideshow container */
+.slideshow-container {
+    height: 100%;
+    /* max-width: 100%; */
+    text-align: center;
+}
+.slideshow-container img {
+    max-width: 500px;
+    min-width: 100px;
+}
+  
+/* Hide the images by default */
+.mySlides {
+    display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+    cursor: pointer;
+    padding: 16px 25px;
+    color: black;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+}
+
+/* The dots/bullets/indicators */
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+    background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
 }

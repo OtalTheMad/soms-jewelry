@@ -2,21 +2,33 @@
 *{
     box-sizing: border-box;
     margin: 0;
+    line-height: 1.4;
 }
 
-div{
-    border: 2px solid red;
+body {
+    font-size: 16px;
+}
+
+.menu-container a{
+    color: #000000;
+    text-align: center;
+    padding: 7px 12px;
+    text-decoration: none;
+}
+.menu-container a:hover {
+    background-color: #000000;
+    color: #FFFFFF;
+}
+
+.page-footer {
+    font-size: 8px;
+    text-align: center;
+    background-color: #f2f2f2;
 }
 
 /* Mobile */
 [class*="col-"] {
     width: 100%;
-}
-
-/* Desktop */
-[class*="col-"] {
-    float: left;
-    padding: 15px;
 }
 
 .row::after {
@@ -45,4 +57,14 @@ div{
     .col-10 {width: 83.33%;}
     .col-11 {width: 91.66%;}
     .col-12 {width: 100%;}
+
+    /* Desktop */
+    [class*="col-"] {
+        float: left;
+    }
+
+    footer {
+        font-size: 11px;
+        text-align: center;
+    }
 }

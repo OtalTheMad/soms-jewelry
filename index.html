@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/base.css">
     <link rel="stylesheet" href="/css/main.css">
+    <script src="js/main.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
@@ -16,34 +17,64 @@
 
     <div class="row">
         <header>
-            <div class="col-3 logo-container">
-                <img id="logo" src="resources/images/logos/logo_soms.png" alt="logo_soms">
-            </div>
-            <div class="col-9 logo-header">
-                <h2>SOMS Jewelry</h2>
-            </div>
+        <div class="col-12 logo-container">
+        <img id="logo" src="resources/images/logos/logo_soms.png" alt="logo_soms">
+        </div>
+        <div class="col-12 logo-header">
+        <h2>La vida es corta. Usa SOMS.</h2>
+        </div>
         </header>
     </div>
     <!-- Content Row -->
-    <div class="row">
-        <nav class="col-3 menu">
-            <li><a href="">Sample Text</a></li>
-            <li><a href="">Sample Text</a></li>
-            <li><a href="">Sample Text</a></li>
-        </nav>
 
-        <div class="col-9 main">
+    <div class="row">
+     <!-- Slideshow container -->
+        <div class="col-12 slideshow-container">
+            <!-- Full-width images with number and caption text -->
+            <div class="mySlides fade">
+            <img src="resources/images/content/aritos1.jpeg" style="width:100%">
+            </div>
+        
+            <div class="mySlides fade">
+            <img src="resources/images/content/collar3.jpeg" style="width:100%">
+            </div>
+        
+            <div class="mySlides fade">
+            <img src="resources/images/content/aritos2.jpeg" style="width:100%">
+            </div>
+        
+            <!-- Next and previous buttons -->
+            <div class="col-12 slideshow-button-container" style="text-align:center; padding: 10px;">
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+                
+            </div>
+        </div>
+        <br>
+    </div>
+
+    <div class="row">
+        <!-- <nav class="col-3 menu-container">
+            <a class="col-12" href="">Sample Text</a>
+            <a class="col-12" href="">Sample Text</a>
+            <a class="col-12" href="">Sample Text</a>
+        </nav> -->
+
+        <div class="col-12 main">
             <h1>Lorem, ipsum.</h1>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi quos sit consequatur nesciunt veniam magni, autem fugiat quod, perferendis soluta ut cumque eos iste voluptatum placeat provident! Consequuntur, nostrum repellat?</p>
         </div>
     </div>
 
-    <div class="col-12 row">
+    <div class="col-12 row page-footer">
         <footer class="col-12">
-            <h2 class="footer">SOMS Jewelry - Honduras, © 2024</h2>
+            <h2> © 2024, SOMS Jewelry - Honduras. Powered by Oscar</h2>
         </footer>
     </div>
-
     
 </body>
 </html>
