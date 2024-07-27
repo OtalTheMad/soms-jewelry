@@ -1,19 +1,14 @@
-
 let slideIndex = 1;
 
 document.addEventListener('DOMContentLoaded', function() {
     console.log('DOM fully loaded and parsed');
     showSlides(slideIndex);
+    setInterval(() => { plusSlides(1); }, 6500);
 });
 
     // Next/previous controls
     function plusSlides(n) {
     showSlides(slideIndex += n);
-    }
-
-    // Thumbnail image controls
-    function currentSlide(n) {
-    showSlides(slideIndex = n);
     }
 
     function showSlides(n) {
@@ -36,5 +31,4 @@ document.addEventListener('DOMContentLoaded', function() {
         }
         slides[slideIndex-1].style.display = "block";  
         dots[slideIndex-1].className += " active";
-        setTimeout(showSlides, 2000);
     }

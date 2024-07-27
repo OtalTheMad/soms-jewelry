@@ -6,7 +6,6 @@
 .logo-container > #logo
 {
     display: inline-block;
-    border: 1px solid purple;
     height: auto;
     width: 100%;
     max-width: 200px; /* Optional: maximum width of the image */
@@ -17,17 +16,23 @@
     background-color: black;
     color: white;
     text-align: center;
+    font-family: Garamond, Baskerville, Caslon, serif;
+}
+
+.main{
+    padding: 32px;
 }
 
 /* Slideshow container */
 .slideshow-container {
-    height: 100%;
-    /* max-width: 100%; */
     text-align: center;
+
 }
 .slideshow-container img {
-    max-width: 500px;
-    min-width: 100px;
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    aspect-ratio: 4 / 3;
 }
   
 /* Hide the images by default */
@@ -82,4 +87,50 @@
 @keyframes fade {
     from {opacity: .4}
     to {opacity: 1}
+}
+
+nav{
+    background-color: #121212;
+    text-align: center;
+}
+
+li{
+    display: block;
+    list-style: none;
+    padding: 8px 9px;
+}
+
+li a{
+    color: white;
+    text-decoration: none;
+
+}
+
+.imageFormat{
+    height: auto;
+    width: 100%;
+}
+
+/* Media query for desktops - Main */
+@media (min-width: 768px) {
+    /* Slideshow container */
+    .slideshow-container {
+        text-align: center;
+
+    }
+    .slideshow-container img {
+        width: 50%;
+        aspect-ratio: 1 / 1;
+    }
+    
+    /* Hide the images by default */
+    .mySlides {
+        display: none;
+    }
+    /* Nav Bar */
+    li{
+        display: inline-block;
+        padding: 16px 18px;
+    }
+    
 }

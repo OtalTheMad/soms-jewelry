@@ -67,4 +67,9 @@ body {
         font-size: 11px;
         text-align: center;
     }
+
+    .imageFormat{
+        height: auto;
+        width: 100%;
+    }
 }
