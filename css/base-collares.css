@@ -33,4 +33,7 @@ footer {
     .column {
         flex-direction: row;
     }
+    body {
+        font-size: 21px;
+    }
 }

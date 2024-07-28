@@ -22,6 +22,8 @@
     font-family: Garamond, Baskerville, Caslon, serif;
 }
 
+/* Contenido del menú que está debajo del logo. */
+/* Contenedor Flex que se utiliza para centrar los objetos dentro de él (nav-Menu y item-Title) */
 .nav-Menu {
     display: flex;
     background-color: black;
@@ -39,14 +41,51 @@
     background-color: #FFFFFF;
 }
 
-[class*="item-picture"] {
+.item-Title {
+    padding: 32px;
+}
+
+.item {
+    position: relative; /* Necesario para posicionar la descripción absolutamente dentro del contenedor .item */
+    flex: 1 1 calc(100% - 10px); /* Usan el 100% del espacio disponible en pantallas pequeñas, menos el gap */
+    max-width: 100%; /* Asegura que no se expanda más del 100% del contenedor */
+}
+
+.item:hover .item-Description {
+    transition: .5s ease;
+    opacity: 1;
+}
+
+/* Acomoda las imágenes para cubrir todo el contenedor. */
+
+/* En la versión de PC usa "display: block" para eliminar el espacio debajo creado por el "position: relative", en móvil no se necesita. */
+.item-picture {
     width: 100%;
     height: auto;
     object-fit: cover;
+    aspect-ratio: 4 / 3;
 }
 
-[class*="item"] {
-    flex: 100%
+/* Propiedad para generar la transición blanca sobre las imágenes en la galería. Puede usarse en todas las galerías. */
+.item:hover .item-picture {
+    transition: .5s ease;
+    opacity: 0.3;
+}
+
+.item-Description {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    opacity: 0;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo semi-transparente */
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .item-Title {
@@ -56,6 +95,7 @@
 /* Media query for desktops - Main */
 @media screen and (min-width: 768px)
 {
+    /* Acomoda los bloques para formar filas en lugar de columnas. */
     .column {
         display: flex;
         flex-direction: row;
@@ -66,6 +106,7 @@
         flex: 100%;
     }
 
+    /* Acomoda las imágenes para formar filas en lugar de columnas. */
     .item-Container {
         display: flex;
         flex-wrap: wrap;
@@ -74,22 +115,33 @@
     }
 
     .item {
-        flex: 1 1 calc(33.33% - 10px);
+        position: relative;
+        flex: 1 1 calc(33.33% - 10px); /* Usan el 33.33% del espacio (para formar 1 fila cada 3 columnas) y resta la diferencia (10 px) */
+    }   
+    
+    .item-picture {
+        display: block;
+        object-fit: cover;
+        aspect-ratio: 4 / 3; /* Abarca solo lo necesario y mantiene la relación aspecto entre todas las imágenes. */
     }
 
-    .item-picture {
-        object-fit: cover;
-        flex: 1 1 calc(33.33% - 10px);
+    .item-Description {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: rgba(0, 0, 0, 0.5); /* Fondo semi-transparente */
+        color: white;
+        padding: 10px 20px;
+        text-align: center;
+        border-radius: 5px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
-    
+   
     footer {
         font-size: 11px;
         text-align: center;
     }
-
-    
-    /* [class*="item-picture"] {
-        max-width: 100%;
-        height: auto;
-    } */
 }
