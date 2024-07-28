@@ -1,0 +1,28 @@
+.header {
+    display: flex;
+    flex-direction: column;
+}
+
+.logo-Container {
+    flex: 100%;
+    text-align: center;
+}
+.logo-Container > #logo {
+    height: auto;
+    width: 100%;
+    max-width: 200px;
+    min-width: 100px;
+}
+
+.logo-Header {
+    flex: 100%;
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-family: Garamond, Baskerville, Caslon, serif;
+}
+
+/* Media query for desktops - Main */
+@media screen and (min-width: 768px)
+{
+}

@@ -1,0 +1,28 @@
+/* General Settings */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    line-height: 1.4;
+}
+
+body {
+    font-size: 16px;
+}
+
+.flex-Container {
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    text-align: center;
+}
+.flex-Container > #logo {
+
+}
+
+/* Media query for desktops - Main */
+@media (min-width: 768px)
+{
+    .flex-Container {
+        flex-direction: row;
+    }
+}
